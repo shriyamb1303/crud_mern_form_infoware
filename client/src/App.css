@@ -1,0 +1,123 @@
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #bc17ce;
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+
+button:focus {
+  outline: none;
+}
+
+.submit {
+  float: right;
+  margin: 15px 100px 0px 0px;
+}
+
+.delete {
+  background-color: rgb(205, 16, 16);
+}
+
+.edit {
+  background-color: rgb(0, 219, 219);
+}
+
+.addUserForms {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.addUserForms label {
+  font-weight: bold;
+}
+
+.addUserForms input[type='text'],
+.addUserForms input[type='number'],
+.addUserForms input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.addUserForms input[type='submit'] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addUserForms input[type='submit']:hover {
+  background-color: #3e8e41;
+}
+
+.addUserForms input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.addUserForms input[type="submit"]:hover {
+  background-color: #45a049;
+}
