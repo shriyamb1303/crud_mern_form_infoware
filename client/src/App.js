@@ -35,6 +35,14 @@ function App() {
       })
   }
 
+  const handleDelete = (userId) => {
+    Axios.delete(`http://localhost:3001/users/${userId}`)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((e) => console.error(e));
+  }
+
   return (
     <div className="App">
       <h1>User Management System</h1>
@@ -56,7 +64,7 @@ function App() {
               <td>{user.email}</td>
               <td>
                 <button className='edit'>Edit</button>
-                <button className='delete'>Delete</button>
+                <button className='delete' onClick={() => handleDelete(user._id)}>Delete</button>
               </td>
             </tr>
           )
